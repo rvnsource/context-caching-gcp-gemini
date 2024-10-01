@@ -1,6 +1,8 @@
-The code stores large research papers (or other input data) in a context cache(using gemini) to avoid repeatedly sending the same data to the model in future requests.
-This helps reduce the number of tokens processed and thus lowers the cost and speeds up processing.
-The code shows how to create, update, and delete cached content, allowing you to control the time-to-live (TTL) and remove the cache when it’s no longer needed.
+-The code stores large research papers (or other input data) in a context cache(using gemini) to avoid 
+    repeatedly sending the same data to the model in future requests.
+-This helps reduce the number of tokens processed and thus lowers the cost and speeds up processing.
+-The code shows how to create, update, and delete cached content, allowing you to control the time-to-live (TTL) 
+   and remove the cache when it’s no longer needed.
 
 Querying methods:-
 1) It demonstrates how to use the cached content in subsequent API calls or
@@ -15,7 +17,7 @@ Files included for context caching (knowledge bases)
 
 *** Finally don't forget to delete the bucket and context cache that you created for this purpose.
 
-Key steps:-
+Example - Steps to create Bucket and upload files to the bucket in google storage (for 3rd pdf):-
 # Step 1: Authenticate with Google Cloud
 gcloud auth login
 gcloud config set project genai-434714
