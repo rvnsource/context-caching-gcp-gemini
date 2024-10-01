@@ -5,8 +5,14 @@
    and remove the cache when it’s no longer needed.
 
 Querying methods:-
-1) It demonstrates how to use the cached content in subsequent API calls or
-2) chat sessions to perform tasks like answering questions or generating content based on the stored documents.
+1) Query based inferencing for summariztion 
+        response = model.generate_content("what is the student name, and Purchase of PC amount"
+)
+
+print(response.text)
+2) Chatbot based interactive (history maintained for the same session of previous queries)
+        chat = model.start_chat()
+        response = chat.send_message(prompt)
 
 Files included for context caching (knowledge bases)
       1.  "gs://cloud-samples-data/generative-ai/pdf/2312.11805v3.pdf",
